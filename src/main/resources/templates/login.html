@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/csslogin.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/favicon.png">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Iniciar Sesión</h2>
+        </div>
+        <form id="loginForm" method="post" action="/login" class="login-form">
+            <div class="mb-3">
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="username" name="email" required placeholder="Ingrese su EMAIL">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="Ingrese su contraseña">
+            </div>
+            <div class="captcha-container">
+                <!-- Google reCAPTCHA widget -->
+                <div class="g-recaptcha" data-sitekey="6LeF8F0qAAAAAKGf4rJn0I8ql0VoCvCfDPDC5o-Z"></div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Login</button>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>

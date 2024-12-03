@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Colmena | Habitaciones</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/animation.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Font -->
+    <link rel="stylesheet" href="/font/fonts.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="/icon/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="body">
+    <!-- #wrapper -->
+    <div id="wrapper">
+        <!-- #page -->
+        <div id="page" class="">
+            <!-- layout-wrap -->
+           <div class="layout-wrap">
+                <!-- preload -->
+                <div id="preload" class="preload-container">
+                    <div class="preloading">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- /preload -->
+                <!-- section-menu-left -->
+                <div class="section-menu-left">
+                    <div class="box-logo">
+                        <a href="/dashboard/" id="site-logo-inner">
+                            <img class="" id="logo_header" alt="" src="/images/logo/logo.png" data-light="/images/logo/logo.png" data-dark="/images/logo/logo-dark.png" >
+                        </a>
+                        <div class="button-show-hide">
+                            <i class="icon-menu-left"></i>
+                        </div>
+                    </div>
+                    <div class="section-menu-left-wrap">
+                        <div class="center">
+                            <div class="center-item">
+                                <div class="center-heading">Todas las páginas</div>
+                                <ul class="menu-list">
+
+                                    <li class="menu-item has-children">
+                                        <a href="javascript:void(0);" class="menu-item-button">
+                                            <div class="icon"><i class="material-icons">bed</i></div>
+                                            <div class="text">Habitaciones</div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/habitaciones" class="">
+                                                    <div class="text">Galería de Habitaciones</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>                    
+                                
+                                    <li class="menu-item has-children">
+                                        <a href="javascript:void(0);" class="menu-item-button">
+                                            <div class="icon"><i class="icon-user"></i></div>
+                                            <div class="text">Usuarios</div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/usuarios/" class="">
+                                                    <div class="text">Todos los usuarios</div>
+                                                </a>
+                                            </li>
+											<li class="sub-menu-item">
+                                                <a href="/dashboard/roles/" class="">
+                                                    <div class="text">Todos los roles</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+									<li class="menu-item has-children">
+                                        <a href="javascript:void(0);" class="menu-item-button">
+                                            <div class="icon"><i class="icon-file-plus"></i></div>
+                                            <div class="text">Facturación</div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/facturacion/lista" class="">
+                                                    <div class="text">Lista de ventas</div>
+                                                </a>
+                                                
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/facturacion/caja" class="">
+                                                    <div class="text">Apertura de caja</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+									
+                                    <li class="menu-item has-children ">
+                                        <a href="javascript:void(0);" class="menu-item-button">
+                                            <div class="icon"><i class="icon-pie-chart"></i></div>
+                                            <div class="text">Reportes</div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/reportes" class="">
+                                                    <div class="icon"><i class="icon-pie-chart"></i></div>
+                                                    <div class="text">Reportes</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item has-children">
+                                        <a href="javascript:void(0);" class="menu-item-button">
+                                            <div class="icon"><i class="icon-box"></i></div>
+                                            <div class="text">Reclamos</div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/reclamos" class="">
+                                                    <div class="text">Lista de Reclamos</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section-menu-left -->
+                <!-- section-content-right -->
+                <div class="section-content-right">
+                    <!-- header-dashboard -->
+                    <div class="header-dashboard">
+                        <div class="wrap">
+                            <div class="header-left">
+                                <a href="/dashboard/">
+                                    <img class="" id="logo_header_mobile" alt="" src="/images/logo/logo.png" data-light="images/logo/logo.png" data-dark="images/logo/logo-dark.png" data-width="154px" data-height="52px" data-retina="images/logo/logo@2x.png">
+                                </a>
+                                <div class="button-show-hide">
+                                    <i class="icon-menu-left"></i>
+                                </div>
+                                <form class="form-search flex-grow">
+                                    <fieldset class="name">
+                                        <input type="text" placeholder="Search here..." class="show-search" name="name" tabindex="2" value="" aria-required="true" required="">
+                                    </fieldset>
+                                    <div class="button-submit">
+                                        <button class="" type="submit"><i class="icon-search"></i></button>
+                                    </div>
+                                    <div class="box-content-search" id="box-content-search">
+                                        <ul class="mb-24">
+                                            <li class="mb-14">
+                                                <div class="body-title">Top selling product</div>
+                                            </li>
+                                            <li class="mb-14">
+                                                <div class="divider"></div>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/17.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Dog Food Rachael Ray Nutrish®</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/18.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Natural Dog Food Healthy Dog Food</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/19.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Freshpet Healthy Dog Food and Cat</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="">
+                                            <li class="mb-14">
+                                                <div class="body-title">Order product</div>
+                                            </li>
+                                            <li class="mb-14">
+                                                <div class="divider"></div>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/20.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Sojos Crunchy Natural Grain Free...</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/21.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Kristin Watson</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/22.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Mega Pumpkin Bone</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/23.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Mega Pumpkin Bone</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="header-grid">
+                                <div class="header-item button-dark-light">
+                                    <i class="icon-moon"></i>
+                                </div>
+                                <div class="popup-wrap user type-header">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="header-user wg-user">
+                                                <span class="image">
+                                                    <img src="/images/avatar/user-1.png" alt="">
+                                                </span>
+                                                <span class="flex flex-column">
+                                                    <span id="nombrebd" class="body-title mb-2">Kristin Watson</span>
+                                                    <span id="rolbd" class="text-tiny">Admin</span>
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end has-content" aria-labelledby="dropdownMenuButton3" >
+                                            <li>
+                                                <a href="setting.html" class="user-item">
+                                                    <div class="icon">
+                                                        <i class="icon-settings"></i>
+                                                    </div>
+                                                    <div class="body-title-2">Setting</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/login" class="user-item">
+                                                    <div class="icon">
+                                                        <i class="icon-log-out"></i>
+                                                    </div>
+                                                    <div onclick="logout()" class="body-title-2">Log out</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /header-dashboard -->
+
+                    <!-- main-content -->
+                    <div class="main-content">
+                        <!-- main-content-wrap -->
+                        <div class="main-content-inner">
+                            <!-- main-content-wrap -->
+                            <div class="main-content-wrap">
+                                <div class="flex items-center flex-wrap justify-between gap20 mb-27">
+                                    <h3>Todas las Habitaciones</h3>
+                                    <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
+                                        <li>
+                                            <a href="/dashboard/"><div class="text-tiny">Dashboard</div></a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <div class="text-tiny">Habitaciones</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- all-gallery -->
+                                <div class="all-gallery-wrap">
+                                    <div class="wg-box left flex-grow">
+                                        <div class="flex items-center justify-between gap10 flex-wrap">
+                                            <div class="flex items-center flex-wrap gap10">
+                                                <div class="tf-button-funtion button-create">
+                                                    <i class="bi bi-plus-circle"></i>
+                                                    <div class="body-title">Crear</div>
+                                                </div>
+                                            </div>
+                                        <div class="wrap-title flex items-center justify-between gap20 flex-wrap">
+                                            <div class="body-title">Ordenar por</div>
+                                            <div class="flex items-center gap20">
+                                                <div class="select style-default">
+                                                    <select class="">
+                                                        <option>Disponible</option>
+                                                        <option>Ocupado</option>
+                                                        <option>Mantenimiento</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="contenedor-habitaciones">
+                                            <div class="habitaciones-grid">
+                                               
+                                            </div>    
+                                        </div>
+                                        <!-- Paginación -->
+                                        <div class="pagination">
+                                            <button>Anterior</button>
+                                            <button class="active">1</button>
+                                            <button>Siguiente</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /all-gallery -->
+                            </div>
+                        </div>
+                        <!-- /main-content-wrap -->
+                    </div>
+                    <!-- /main-content -->
+                    
+                    <!--Los MODALES hacen al hombre-->
+                    <!-- Modal para editar la habitación -->
+                    <div id="modal-habitacion" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Modificar Habitación</h2>
+                            <form class="habitacion-info" id="form-habitacion">
+                                <label class="body-text" for="nombre-habitacion">Nombre:</label>
+                                <input class="body-text" type="text" id="nombre-habitacion" name="nombre">
+
+                                <label class="body-text" for="tipo-habitacion">Tipo:</label>
+                                <input class="body-text" type="text" id="tipo-habitacion" name="tipo">
+
+                                <label class="body-text" for="capacidad-habitacion">Capacidad:</label>
+                                <input class="body-text" type="number" id="capacidad-habitacion" name="capacidad">
+
+                                <label class="body-text" for="precio-habitacion">Precio:</label>
+                                <input class="body-text" type="number" id="precio-habitacion" name="precio">
+
+                                <label class="body-text" for="estado-habitacion">Estado:</label>
+                                <select id="estado-habitacion" name="estado">
+                                    <option value="Disponible">Disponible</option>
+                                    <option value="Ocupado">Ocupado</option>
+                                    <option value="Mantenimiento">Mantenimiento</option>
+                                </select>
+
+                                <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                                    <button type="submit" style="flex: 1; margin-right: 10px; background-color: rgb(53, 115, 231); color: white;">Guardar cambios</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal para crear la habitación -->
+                    <div id="modal-crear-habitacion" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 id="modal-titulo-crear">Crear Habitación</h2>
+                            <form id="form-crear-habitacion">
+                                <label class="body-text" for="nombre-habitacion-crear">Nombre:</label>
+                                <input class="body-text" type="text" id="nombre-habitacion-crear" name="nombre">
+
+                                <label class="body-text" for="tipo-habitacion-crear">Tipo:</label>
+                                <input class="body-text" type="text" id="tipo-habitacion-crear" name="tipo">
+
+                                <label class="body-text" for="capacidad-habitacion-crear">Capacidad:</label>
+                                <input class="body-text" type="number" id="capacidad-habitacion-crear" name="capacidad">
+
+                                <label class="body-text" for="precio-habitacion-crear">Precio:</label>
+                                <input class="body-text" type="number" id="precio-habitacion-crear" name="precio">
+
+                                <label class="body-text" for="estado-habitacion-crear">Estado:</label>
+                                <select class="body-text" id="estado-habitacion-crear" name="estado">
+                                    <option value="Disponible">Disponible</option>
+                                    <option value="Ocupado">Ocupado</option>
+                                    <option value="Mantenimiento">Mantenimiento</option>
+                                </select>
+
+                                <button id="btnsave" type="submit">Guardar</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal de Registro de Persona -->
+                    <div id="modal-persona" class="modal" style="display: none;">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Registrar Persona</h2>
+                            <form class="form-persona">
+                                <label class="body-text" for="dni-ruc-persona">DNI o RUC:</label>
+                                <input id="dniruc" class="body-text" type="text" name="dni-ruc-persona" required>
+
+                                <button id="buscar" type="button" class="guardar-persona">Buscar</button>
+                                
+                                <input id="nombrerazon" class="body-text" type="text" name="nombre-persona" required>
+
+                                <input id="direccion" class="body-text" type="text" name="direccion-persona" required>
+                                
+                                <button id="guardarcliente" type="button" class="guardar-persona">Guardar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--fin de los MODALES XD-->
+                </div>
+                <!-- /section-content-right -->
+            </div>
+            <!-- /layout-wrap -->
+        </div>
+        <!-- /#page -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-select.min.js"></script>
+    <script src="/js/zoom.js"></script>
+    <script src="/js/theme-settings.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/habitacion.js"></script>
+</body>
+
+</html>

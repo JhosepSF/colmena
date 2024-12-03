@@ -1,0 +1,75 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Posicionar el título en la parte superior izquierda */
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo para la tabla */
+.table-container {
+    margin-top: 20px; /* Espacio entre el título y la tabla */
+}
+
+table {
+    width: 400px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #8a3f6e;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para los botones */
+.button-container {
+    margin-top: 20px; /* Espacio entre la tabla y los botones */
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* Ancho del contenedor para separar los botones */
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Botón de editar (azul) */
+.edit-btn {
+    background-color: #007bff;
+}
+
+/* Botón de eliminar (rojo) */
+.delete-btn {
+    background-color: #dc3545;
+}
+
+/* Efecto hover en los botones */
+.btn:hover {
+    opacity: 0.8;
+}

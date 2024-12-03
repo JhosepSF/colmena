@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+        <!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <title>Colmena | Facturación</title>
+    
+        <meta name="author" content="themesflat.com">
+    
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <!-- Theme Style -->
+        <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/animation.css">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/modal.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+        <!-- Font -->
+        <link rel="stylesheet" href="/font/fonts.css">
+    
+        <!-- Icon -->
+        <link rel="stylesheet" href="/icon/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <!-- Favicon and Touch Icons  -->
+        <link rel="shortcut icon" href="/images/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="/images/favicon.png">
+</head>
+
+<body class="body">
+
+    <!-- #wrapper -->
+    <div id="wrapper">
+        <!-- #page -->
+        <div id="page" class="">
+            <!-- layout-wrap -->
+           <div class="layout-wrap">
+                <!-- preload -->
+                <div id="preload" class="preload-container">
+                    <div class="preloading">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- /preload -->
+                <!-- section-menu-left -->
+                <div class="section-menu-left">
+                    <div class="box-logo">
+                        <a href="/dashboard/" id="site-logo-inner">
+                            <img class="" id="logo_header" alt="" src="/images/logo/logo.png" data-light="/images/logo/logo.png" data-dark="/images/logo/logo-dark.png" >
+                        </a>
+                        <div class="button-show-hide">
+                            <i class="icon-menu-left"></i>
+                        </div>
+                    </div>
+                    <div class="section-menu-left-wrap">
+                        <div class="center">
+                            <div class="center-item">
+                                <div class="center-heading">Todas las páginas</div>
+                                <ul class="menu-list">
+
+                                    <li class="menu-item has-children">
+                                        <a href="javascript:void(0);" class="menu-item-button">
+                                            <div class="icon"><i class="material-icons">bed</i></div>
+                                            <div class="text">Habitaciones</div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/cajero/habitaciones" class="">
+                                                    <div class="text">Galería de Habitaciones</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>                    
+                                
+									<li class="menu-item has-children">
+                                        <a href="javascript:void(0);" class="menu-item-button">
+                                            <div class="icon"><i class="icon-file-plus"></i></div>
+                                            <div class="text">Facturación</div>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/cajero/facturacion/lista" class="">
+                                                    <div class="text">Lista de ventas</div>
+                                                </a>
+                                                
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="/dashboard/cajero/facturacion/caja" class="">
+                                                    <div class="text">Apertura de caja</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /section-menu-left -->
+                <!-- section-content-right -->
+                <div class="section-content-right">
+                    <!-- header-dashboard -->
+                    <div class="header-dashboard">
+                        <div class="wrap">
+                            <div class="header-left">
+                                <a href="/dashboard/">
+                                    <img class="" id="logo_header_mobile" alt="" src="/images/logo/logo.png" data-light="images/logo/logo.png" data-dark="images/logo/logo-dark.png" data-width="154px" data-height="52px" data-retina="images/logo/logo@2x.png">
+                                </a>
+                                <div class="button-show-hide">
+                                    <i class="icon-menu-left"></i>
+                                </div>
+                                <form class="form-search flex-grow">
+                                    <fieldset class="name">
+                                        <input type="text" placeholder="Search here..." class="show-search" name="name" tabindex="2" value="" aria-required="true" required="">
+                                    </fieldset>
+                                    <div class="button-submit">
+                                        <button class="" type="submit"><i class="icon-search"></i></button>
+                                    </div>
+                                    <div class="box-content-search" id="box-content-search">
+                                        <ul class="mb-24">
+                                            <li class="mb-14">
+                                                <div class="body-title">Top selling product</div>
+                                            </li>
+                                            <li class="mb-14">
+                                                <div class="divider"></div>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/17.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Dog Food Rachael Ray Nutrish®</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/18.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Natural Dog Food Healthy Dog Food</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/19.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Freshpet Healthy Dog Food and Cat</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="">
+                                            <li class="mb-14">
+                                                <div class="body-title">Order product</div>
+                                            </li>
+                                            <li class="mb-14">
+                                                <div class="divider"></div>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/20.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Sojos Crunchy Natural Grain Free...</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/21.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Kristin Watson</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14 mb-10">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/22.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Mega Pumpkin Bone</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-10">
+                                                        <div class="divider"></div>
+                                                    </li>
+                                                    <li class="product-item gap14">
+                                                        <div class="image no-bg">
+                                                            <img src="/images/products/23.png" alt="">
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap20 flex-grow">
+                                                            <div class="name">
+                                                                <a href="product-list.html" class="body-text">Mega Pumpkin Bone</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="header-grid">
+                                <div class="header-item button-dark-light">
+                                    <i class="icon-moon"></i>
+                                </div>
+                                <div class="popup-wrap user type-header">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="header-user wg-user">
+                                                <span class="image">
+                                                    <img src="/images/avatar/user-1.png" alt="">
+                                                </span>
+                                                <span class="flex flex-column">
+                                                    <span id="nombrebd" class="body-title mb-2">Kristin Watson</span>
+                                                    <span id="rolbd" class="text-tiny">Admin</span>
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end has-content" aria-labelledby="dropdownMenuButton3" >
+                                            <li>
+                                                <a href="setting.html" class="user-item">
+                                                    <div class="icon">
+                                                        <i class="icon-settings"></i>
+                                                    </div>
+                                                    <div class="body-title-2">Setting</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/login" class="user-item">
+                                                    <div class="icon">
+                                                        <i class="icon-log-out"></i>
+                                                    </div>
+                                                    <div onclick="logout()" class="body-title-2">Log out</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /header-dashboard -->
+                    <!-- main-content -->
+                    <div class="main-content">
+                        <!-- main-content-wrap -->
+                        <div class="main-content-inner">
+                            <!-- main-content-wrap -->
+                            <div class="main-content-wrap">
+                                <div class="flex items-center flex-wrap justify-between gap20 mb-27">
+                                    <h3 id="ventaid1"></h3>
+                                    <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
+                                        <li>
+                                            <a href="/dashboard/"><div class="text-tiny">Colmena</div></a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="text-tiny">Facturación</div></a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <a href="#"><div class="text-tiny">Detalle de Renta</div></a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <div id="ventaid2" class="text-tiny"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- order-detail -->
+                                <div class="wg-order-detail">
+                                    <div class="left flex-grow">
+                                        <div class="wg-box mb-20">
+                                            <div class="wg-table table-order-detail">
+                                                <ul class="table-title flex items-center justify-between gap20 mb-24">
+                                                    <li>
+                                                        <div class="body-title">Todas la habitaciones</div>
+                                                    </li>    
+                                                </ul>
+                                                <ul id="habitacionesrentadas" class="flex flex-column">
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="wg-box">
+                                            <div class="wg-table table-cart-totals">
+                                                <ul class="table-title flex mb-24">
+                                                    <li>
+                                                        <div class="body-title">Total de la venta</div>
+                                                    </li>    
+                                                    <li>
+                                                        <div class="body-title">Precio</div>
+                                                    </li>    
+                                                </ul>
+                                                <ul class="flex flex-column gap14">
+                                                    <li class="cart-totals-item">
+                                                        <span class="body-text">Subtotal:</span>
+                                                        <span id="subtotal" class="body-title-2">s/ 100.00</span>
+                                                    </li>
+                                                    <li class="cart-totals-item">
+                                                        <span class="body-text">IGV:</span>
+                                                        <span id="igv" class="body-title-2">s/ 5.00</span>
+                                                    </li>
+                                                    <li class="cart-totals-item">
+                                                        <span class="body-title">Precio total:</span>
+                                                        <span id="total" class="body-title tf-color-1">s/ 105.00</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="wg-box mb-20 gap10">
+                                            <div class="body-title">Resumen</div>
+                                            <div class="summary-item">
+                                                <div class="body-text">ID Renta</div>
+                                                <div id="ventaid3" class="body-title-2"></div>
+                                            </div>
+                                            <div class="summary-item">
+                                                <div class="body-text">Fecha</div>
+                                                <div id="fecha" class="body-title-2">l</div>
+                                            </div>
+                                            <div class="summary-item">
+                                                <div class="body-text">Hora</div>
+                                                <div id="hora" class="body-title-2">l</div>
+                                            </div>
+                                            <div class="summary-item">
+                                                <div class="body-text">Total</div>
+                                                <div id="totalresumen" class="body-title-2 tf-color-1">s/ 105.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="wg-box mb-20 gap10">
+                                            <label  class="body-title" for="opciones">Identificaión</label>
+                                                
+                                                <!-- Campo para DNI o RUC -->
+                                                <div id="campo-dni-ruc" class="oculto">
+                                                    <label class="body-text" for="dniRuc">Selecciones el cliente</label>
+                                                    <select id="dniRuc">
+                                                        <option value="">-- Seleccione --</option>
+                                                        <!-- Clientes en esta habitacion -->
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        <div class="wg-box mb-20 gap10">
+                                            <label class="body-title" for="opciones-pago">Forma de pago</label>
+                                            <select id="opciones-pago" onchange="mostrarCampoPago()">
+                                                <option value="">-- Seleccione --</option>
+                                                <option value="Tarjeta">Tarjeta</option>
+                                                <option value="Aplicativo">Aplicativo</option>
+                                                <option value="Efectivo">Efectivo</option>
+                                            </select>
+                                        
+                                            <!-- Contenido para la opción de Aplicativo -->
+                                            <div id="campo-aplicativo" class="oculto centro-contenido">
+                                                <img class="imagenqr" src="/images/QR/QR.png" alt="Imagen de Aplicativo">
+                                                <a class="tf-button style-1 w-full" id="checkAplicativo"><i class="icon-check"></i>Confirmar pago</a>
+                                            </div>
+                                        </div>
+                                        <div class="wg-box gap10">
+                                            <div class="body-title">Imprimir comprobante</div>
+                                            <div id="fechacompro" class="body-title-2 tf-color-2">Fecha de hoy</div>
+                                            <a id="btnimprimir" class="tf-button style-1 w-full"><i class="icon-file-plus"></i>Imprimir Comprobante</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /order-detail -->
+                            </div>
+                            <!-- /main-content-wrap -->
+                        </div>
+                        <!-- /main-content-wrap -->
+                        <!-- bottom-page -->
+                        
+                        <!-- /bottom-page -->
+                    </div>
+                    <!-- /main-content -->
+                </div>
+                <!-- /section-content-right -->
+            </div>
+            <!-- /layout-wrap -->
+        </div>
+        <!-- /#page -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-select.min.js"></script>
+    <script src="/js/zoom.js"></script>
+    <script src="/js/theme-settings.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/detalle-cajero.js"></script>
+</body>
+
+</html>

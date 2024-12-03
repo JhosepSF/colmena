@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Evento</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/3d-fluency/94/user-shield.png">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .boleta-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+
+        .boleta-header {
+            text-align: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+
+        .boleta-header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .boleta-info, .boleta-details {
+            margin-bottom: 10px;
+        }
+
+        .boleta-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .boleta-row span {
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .boleta-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .botones {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .botones button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="boleta">
+        <div class="boleta-container">
+            <!-- Encabezado de la boleta -->
+            <div class="boleta-header">
+                <h2>Boleta de Venta Colmena Suites</h2>
+            </div>
+            <div class="boleta-header">
+                <h2>R.U.C: 10723949969</h2>
+            </div>
+            <div class="boleta-header">
+                <h2 id="codigo-boleta">*aqui va el código de la boleta*</h2>
+            </div>
+    
+            <!-- Información del cliente -->
+            <div class="boleta-info">
+                <div class="boleta-row">
+                    <span><strong>Fecha:</strong></span><span id="fecha-boleta">01/12/2024</span>
+                </div>
+                <div class="boleta-row">
+                    <span><strong>Cliente:</strong></span><span id="cliente-boleta">Lennyn Zumaeta Chasquibol</span>
+                </div>
+                <div class="boleta-row">
+                    <span><strong>DNI/RUC:</strong></span><span id="dniruc-boleta">12345678***</span>
+                </div>
+                <div class="boleta-row">
+                    <span><strong>Dirección:</strong></span><span id="direccion-boleta">Jr Amorarca 315</span>
+                </div>
+            </div>
+    
+            <!-- Detalles de la compra -->
+            <div class="boleta-details">
+                <div class="boleta-row">
+                    <span><strong>Descripción:</strong></span><span id="descripcion-boleta">Cuarto X</span>
+                </div>
+                <div class="boleta-row">
+                    <span><strong>Precio Unitario:</strong></span><span id="precio-unitario-boleta">S/ 70.00</span>
+                </div>
+                <div class="boleta-row">
+                    <span><strong>Total:</strong></span><span id="total-boleta">S/ 178.00</span>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <!-- Pie de la boleta -->
+            <div class="boleta-footer">
+                <p>Gracias por su compra</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="botones">
+        <button type="button" class="btn btn-primary" id="btn-generar" onclick="generarPDF(event)">
+            Generar PDF
+        </button>
+        <button type="button" class="btn btn-danger" id="btn-regresar">
+            Regresar a rentas
+        </button>
+    </div>
+
+    <script src="/js/pdf-cajero.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</body>
+</html>
